@@ -8,11 +8,11 @@ angular.module('wrs.contact', [])
 
     .controller('ImgGalleryCtrl', ['$scope', function($scope) {
         $scope.images = [
-            {thumb: '../../../assets/img/picture_01.jpg', img: '../../../assets/img/picture_01.jpg', description: 'Image 1'},
-            {thumb: '../../../assets/img/picture_02.jpg', img: '../../../assets/img/picture_02.jpg', description: 'Image 2'},
-            {thumb: '../../../assets/img/picture_03.jpg', img: '../../../assets/img/picture_03.jpg', description: 'Image 3'},
-            {thumb: '../../../assets/img/picture_04.jpg', img: '../../../assets/img/picture_04.jpg', description: 'Image 4'},
-            {thumb: '../../../assets/img/picture_05.jpg', img: '../../../assets/img/picture_05.jpg', description: 'Image 5'},
+            {thumb: '../../assets/img/picture_01.jpg', img: '../../assets/img/picture_01.jpg', description: 'Image 1'},
+            {thumb: '../../assets/img/picture_02.jpg', img: '../../assets/img/picture_02.jpg', description: 'Image 2'},
+            {thumb: '../../assets/img/picture_03.jpg', img: '../../assets/img/picture_03.jpg', description: 'Image 3'},
+            {thumb: '../../assets/img/picture_04.jpg', img: '../../assets/img/picture_04.jpg', description: 'Image 4'},
+            {thumb: '../../assets/img/picture_05.jpg', img: '../../assets/img/picture_05.jpg', description: 'Image 5'},
         ];
     }])
 
