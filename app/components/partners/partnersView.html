@@ -1,0 +1,25 @@
+<div class="container">
+
+<!--  <div ng-repeat="country in countries">
+    <h3 class="col-xs-12 partners_country">{{country.name}}</h3>
+
+    <div ng-repeat="partner in country.partners" class="col-sm-4 col-md-3 col-xs-12 partners_contact_card">
+      <div class="partners_contact_card_hl">{{partner.name}}</div>
+      <div class="">{{partner.address}}</div>
+      <a href="{{partner.website}}" class="card-link">{{partner.website}}</a>
+    </div>
+
+  </div>-->
+
+  <div ng-repeat="country in countries" class="col-sm-4 col-md-3 col-xs-12 ">
+    <h3 class="partners_country">{{country.name}}</h3>
+
+    <div ng-repeat="partner in country.partners | orderBy : 'name'" class="partners_contact_card">
+      <div class="partners_contact_card_hl">{{partner.name}}</div>
+      <div class="">{{partner.address}}</div>
+      <a ng-if="partner.website" href="{{partner.website}}" target="_blank">{{partner.website | removeHTTP}}</a>
+      <a ng-if="partner.email" href="mailto:{{partner.email}}" target="_top">{{partner.email}}</a>
+    </div>
+
+  </div>
+</div>

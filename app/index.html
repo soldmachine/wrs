@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" ng-app="wrs" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" ng-app="wrs" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" ng-app="wrs" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" ng-app="wrs" class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <title>Rosi Schuster</title>
+
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/normalize.css">
+  <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/main.css">
+  <link rel="stylesheet" href="../assets/css/app.css">
+  <link rel="stylesheet" type="text/css" href="bower_components/ngGallery/src/css/ngGallery.css">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+  <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+<body>
+
+<div class='navbar navbar-static-top'>
+  <div class="container" role="navigation">
+    <div class="navbar-brand col-sm-6 col-xs-12"><a href="#/">ROSI SCHUSTER</a></div>
+    <nav id="nav-tag">
+      <ul class="nav navbar-nav navbar-right" ng-controller="NavCtrl">
+        <li ng-class="{ active: isActive('/')}"><a href="#/">HOME</a></li>
+        <li ng-class="{ active: isActive('/partners')}"><a href="#/partners">BEZUGSQUELLEN</a></li>
+        <li ng-class="{ active: isActive('/contact')}"><a href="#/contact">KONTAKT</a></li>
+      </ul>
+    </nav>
+  </div>
+</div>
+
+
+<!--[if lt IE 7]>
+<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+
+<div ng-view></div>
+
+
+
+<!-- In production use:
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
+-->
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/angular-route/angular-route.js"></script>
+<script src="bower_components/angular-resource/angular-resource.js"></script>
+
+<!-- required for GMaps -->
+<script src='bower_components/lodash/lodash.js'></script>
+<script src='bower_components/angular-simple-logger/dist/angular-simple-logger.js'></script>
+<script src='bower_components/angular-google-maps/dist/angular-google-maps.js'></script>
+
+<script src="app.module.js"></script>
+<script src="app.route.js"></script>
+<script src="app.filter.js"></script>
+
+<script src="components/home/homeController.js"></script>
+
+<script src="components/partners/partnersController.js"></script>
+<script src="components/partners/partnersService.js"></script>
+
+<script src="components/contact/contactController.js"></script>
+
+<script type="text/javascript" src="bower_components/ngGallery/src/js/ngGallery.js"></script>
+
+</body>
+</html>
