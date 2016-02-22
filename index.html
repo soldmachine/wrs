@@ -13,16 +13,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
-  <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/normalize.css">
-  <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/main.css">
-  <link rel="stylesheet" href="../assets/css/app.css">
+  <link rel="stylesheet" href="assets/css/app.css">
+
+  <!-- ngGallery (2 rows) -->
   <link rel="stylesheet" type="text/css" href="bower_components/ngGallery/src/css/ngGallery.css">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
-  <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
 <body>
 
+<!-- Navigation -->
 <div class='navbar navbar-static-top'>
   <div class="container" role="navigation">
     <div class="navbar-brand col-sm-6 col-xs-12"><a href="#/">ROSI SCHUSTER</a></div>
@@ -38,9 +38,13 @@
 
 
 <!--[if lt IE 7]>
-<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<p class="browsehappy">
+  You are using an <strong>outdated</strong> browser.
+  Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.
+</p>
 <![endif]-->
 
+<!-- Main -->
 <div ng-view></div>
 
 
@@ -51,24 +55,25 @@
 <script src="bower_components/angular/angular.js"></script>
 <script src="bower_components/angular-route/angular-route.js"></script>
 <script src="bower_components/angular-resource/angular-resource.js"></script>
+<script src="bower_components/ngGallery/src/js/ngGallery.js"></script>
 
 <!-- required for GMaps -->
 <script src='bower_components/lodash/lodash.js'></script>
 <script src='bower_components/angular-simple-logger/dist/angular-simple-logger.js'></script>
 <script src='bower_components/angular-google-maps/dist/angular-google-maps.js'></script>
 
+<!-- WRS app -->
 <script src="app.module.js"></script>
 <script src="app.route.js"></script>
 <script src="app.filter.js"></script>
 
 <script src="components/home/homeController.js"></script>
-
 <script src="components/partners/partnersController.js"></script>
 <script src="components/partners/partnersService.js"></script>
-
 <script src="components/contact/contactController.js"></script>
 
-<script type="text/javascript" src="bower_components/ngGallery/src/js/ngGallery.js"></script>
+
+<!-- Google Analytics -->
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
             (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -77,7 +82,8 @@
 
   ga('create', 'UA-74000801-1', 'auto');
   ga('send', 'pageview');
-
 </script>
+
+
 </body>
 </html>

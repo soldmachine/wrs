@@ -6,7 +6,7 @@ angular.module('wrs.routes', [
         'wrs.partners'
     ])
 
-    .config(['$routeProvider', function($routeProvider) {
+    .config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
         $routeProvider.when('/', {
             templateUrl: 'components/home/homeView.html',
             controller: 'HomeCtrl'
@@ -20,4 +20,5 @@ angular.module('wrs.routes', [
             controller: 'ContactCtrl'
         });
         $routeProvider.otherwise({redirectTo: '/'});
+
     }]);

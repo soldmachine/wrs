@@ -1,0 +1,149 @@
+[
+  {
+    "name": "Österreich",
+    "order": 0,
+    "partners": [
+      {
+        "name": "Getränke R. Wagner",
+        "address": "4664 Oberweis",
+        "website": "http://www.wagnerweb.at"
+      },
+      {
+        "name": "Oskar Ammann",
+        "address": "6710 Nenzing",
+        "email": "oskar.ammann@austria.com"
+      },
+      {
+        "name": "Weinhandel Kohlbacher",
+        "address": "8010 Graz",
+        "website": "http://www.weinhandel-kohlbacher.at"
+      },
+      {
+        "name": "Vinothek Zawadil",
+        "address": "1020 Wien",
+        "website": "http://www.zawadil.at"
+      },
+      {
+        "name": "Meinl am Graben",
+        "address": "1010 Wien",
+        "website": "http://www.meinlamgraben.at"
+      },
+      {
+        "name": "Weinhandel Wild",
+        "address": "7011 Siegendorf",
+        "website": "http://www.weinhandel-wild.at"
+      },
+      {
+        "name": "Weinwerk Burgenland",
+        "address": "7100 Neusiedl am See",
+        "website": "http://www.weinwerk-burgenland.at"
+      },
+      {
+        "name": "J. Csuk Wein & Specereien",
+        "address": "8380 Jennersdorf",
+        "email": "csuk.wein.specereien@aon.at"
+      },
+      {
+        "name": "Blumen Thell",
+        "address": "7121 Weiden am See",
+        "website": "http://www.blumen-thell.at"
+      },
+      {
+        "name": "Fritz Wein Cafe",
+        "address": "6330 Kufstein",
+        "email": "fritz.rupprechter@gmail.com"
+      }
+    ]
+  },
+  {
+    "name": "Deutschland",
+    "order": 1,
+    "partners": [
+      {
+        "name": "K&U",
+        "address": "90411 Nürnberg",
+        "website": "http://www.weinhalle.de"
+      },
+      {
+        "name": "Broeding",
+        "address": "80634 München",
+        "website": "http://www.broeding.de"
+      },
+      {
+        "name": "Dallmayr",
+        "address": "80331 München",
+        "website": "http://www.dallmayr.de"
+      },
+      {
+        "name": "Weinfidel",
+        "address": "61476 Kronberg",
+        "website": "http://www.weinfidel.de"
+      },
+      {
+        "name": "Weinstein",
+        "address": "10437 Berlin",
+        "website": "http://www.weinstein.eu"
+      }
+    ]
+  },
+  {
+    "name": "Schweiz",
+    "order": 2,
+    "partners": [
+      {
+        "name": "Cultivino",
+        "address": "3091 Bern",
+        "website": "http://www.cultivino.ch"
+      },
+      {
+        "name": "Vinothek Brancaia",
+        "address": "8008 Zürich",
+        "website": "http://www.vinothek-brancaia.ch"
+      }
+    ]
+  },
+  {
+    "name": "Dänemark",
+    "order": 3,
+    "partners": [
+      {
+        "name": "Vinova",
+        "address": "8700 Horsens",
+        "website": "http://www.vinova.dk"
+      }
+    ]
+  },
+  {
+    "name": "BeNeLux",
+    "order": 3,
+    "partners": [
+      {
+        "name": "Ad Bibendum",
+        "address": "3800 St. Truiden",
+        "website": "http://www.adbibendum.be"
+      }
+    ]
+  },
+  {
+    "name": "Slowakei",
+    "order": 3,
+    "partners": [
+      {
+        "name": "Vinera",
+        "address": "83102 Bratislava",
+        "website": "http://www.vinera.sk"
+      }
+    ]
+  },
+  {
+    "name": "USA",
+    "order": 3,
+    "partners": [
+      {
+        "name": "Schindler Weissmann",
+        "address": "CA 90027 Los Angeles",
+        "website": "http://www.winemonger.com"
+      }
+    ]
+  }
+]
