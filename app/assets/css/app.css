@@ -122,7 +122,7 @@ body {
  */
 
 .home_quote {
-  text-align: justify;
+  text-align: left;
 }
 
 .home_quote.author {
