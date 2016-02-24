@@ -2,7 +2,9 @@
 
 angular.module('wrs.partners', [])
 
-    .controller('PartnersCtrl', ['$scope', 'Countries',
-      function($scope, Countries) {
-        $scope.countries = Countries.query();
-      }]);
+    .controller('PartnersCtrl', ['$scope', 'Countries', '$translate',
+        function($scope, Countries, $translate) {
+            $scope.translate = $translate;
+            $scope.countries = Countries.query();
+        }]
+    );
