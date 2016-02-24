@@ -7,18 +7,21 @@ angular.module('wrs.routes', [
     ])
 
     .config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
-        $routeProvider.when('/', {
+        $routeProvider
+            .when('/', {
             templateUrl: 'components/home/homeView.html',
-            controller: 'HomeCtrl'
-        });
-        $routeProvider.when('/partners', {
+            controller: 'HomeCtrl'})
+
+            .when('/partners', {
             templateUrl: 'components/partners/partnersView.html',
-            controller: 'PartnersCtrl'
-        });
-        $routeProvider.when('/contact', {
+            controller: 'PartnersCtrl'})
+
+            .when('/contact', {
             templateUrl: 'components/contact/contactView.html',
-            controller: 'ContactCtrl'
-        });
-        $routeProvider.otherwise({redirectTo: '/'});
+            controller: 'ContactCtrl'})
+
+            .otherwise({redirectTo: '/'});
+
+        //$locationProvider.html5Mode(true);
 
     }]);

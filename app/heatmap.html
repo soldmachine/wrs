@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>US-Stats</title>
+
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+</head>
+<body>
+
+<h1>US-States (visited)</h1>
+<div id='map_canvas'></div>
+
+
+<script type="text/javascript">
+
+    google.load('visualization', '1', { 'packages': ['geochart'] });
+    google.setOnLoadCallback(drawMap);
+
+    function drawMap() {
+        var data = google.visualization.arrayToDataTable([
+            ['Country', 'Site'],
+            ['Alabama', 0],
+            ['Alaska', 1],
+            ['Arizona', 0],
+            ['Arkansas', 1],
+            ['California', 0],
+            ['Colorado', 0],
+            ['Connecticut', 0],
+            ['Delaware', 1],
+            ['District of Columbia', 0],
+            ['Florida', 1],
+            ['Georgia', 0],
+            ['Hawaii',0],
+            ['Idaho', 0],
+            ['Illinois', 0],
+            ['Indiana', 0],
+            ['Iowa', 0],
+            ['Kansas', 1],
+            ['Kentucky', 0],
+            ['Louisiana', 0],
+            ['Maine', 1],
+            ['Maryland', 0],
+            ['Massachusetts', 0],
+            ['Michigan', 0],
+            ['Minnesota', 0],
+            ['Mississippi', 0],
+            ['Missouri', 0],
+            ['Montana', 0],
+            ['Nebraska', 1],
+            ['Nevada', 0],
+            ['New Hampshire', 0],
+            ['New Jersey', 0],
+            ['New Mexico', 0],
+            ['New York', 0],
+            ['North Carolina', 0],
+            ['North Dakota', 0],
+            ['Ohio', 0],
+            ['Oklahoma', 1],
+            ['Oregon', 0],
+            ['Pennsylvania', 1],
+            ['Rhode Island', 0],
+            ['South Carolina', 0],
+            ['South Dakota', 0],
+            ['Tennessee', 0],
+            ['Texas', 0],
+            ['Utah', 0],
+            ['Vermont', 0],
+            ['Virginia', 0],
+            ['Washington', 0],
+            ['West Virginia', 1],
+            ['Wisconsin', 0],
+            ['Wyoming', 0]
+        ]);
+
+        var options = {width: 556, height: 347};
+        options['region'] = 'US';
+        options['resolution'] = 'provinces';
+        options['colors'] = ['#E80000', '#F0F0F0'];
+        options['legend'] = 'none';
+
+
+        var container = document.getElementById('map_canvas');
+        var geochart = new google.visualization.GeoChart(container);
+        geochart.draw(data, options);
+    };
+</script>
+
+</body>
+</html>

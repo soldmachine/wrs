@@ -12,7 +12,8 @@
   </div>-->
 
   <div ng-repeat="country in countries" class="col-sm-4 col-md-3 col-xs-12 ">
-    <h3 class="partners_country">{{country.name}}</h3>
+    <h3 class="partners_country" ng-if="translate.use() === 'en_US'">{{country.name}}</h3>
+    <h3 class="partners_country" ng-if="translate.use() === 'de_DE'">{{country.name_de}}</h3>
 
     <div ng-repeat="partner in country.partners | orderBy : 'name'" class="partners_contact_card">
       <div class="partners_contact_card_hl">{{partner.name}}</div>
