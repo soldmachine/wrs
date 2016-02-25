@@ -9,8 +9,8 @@
 </head>
 <body>
 
-<h1>US-States (visited)</h1>
-<div id='map_canvas'></div>
+<h1 style="text-align: center;">US-States (visited in red)</h1>
+<div id='map_canvas' style="width: 100%; height: 100%;"></div>
 
 
 <script type="text/javascript">
@@ -74,7 +74,7 @@
             ['Wyoming', 0, '1996']
         ]);
 
-        var options = {width: 556, height: 347};
+        var options = {width: '100%', height: '100%'};
         options['region'] = 'US';
         options['resolution'] = 'provinces';
         options['colors'] = ['#E80000', '#F0F0F0'];
