@@ -14,6 +14,13 @@ body {
   font-family: "Linotype", sans-serif;
   margin-top: 15px;
   margin-bottom: 50px;
+  /*  background-image: url('../../cover/WEINLESE-12.jpg');
+    background-repeat:no-repeat;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;*/
 }
 
 .container {
@@ -131,7 +138,7 @@ body {
  */
 
 .home_quote {
-  text-align: left;
+  text-align: justify;
 }
 
 .home_quote.author {
@@ -151,8 +158,34 @@ body {
  * PARTNERS
  */
 
+.partners_country_container {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+/*.partners_flags{*/
+  /*width: 35px;*/
+  /*height: 35px;*/
+  /*margin-right: 5px;*/
+  /*display: table-cell;*/
+  /*vertical-align: middle;*/
+  /*float: left;*/
+/*}*/
+
+.partners_flags_img{
+  border-radius: 25px;
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+  float: left;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
+
 .partners_country {
-  margin-bottom: 20px;
+  font-size: 23px;
+  /*padding-top: 3px; !* just to counter the padding under the font itself *!*/
 }
 
 .partners_contact_card {
@@ -164,6 +197,7 @@ body {
   font-size: medium;
 }
 
+
 /*
  * CONTACT
  */
@@ -172,7 +206,7 @@ body {
   margin-bottom: 15px;
 }
 
-.contact_address > div,
+.contact_address,
 .contact_web_mail,
 .contact_jurisdiction_uid {
   font-size: medium;
