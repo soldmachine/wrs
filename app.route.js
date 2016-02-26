@@ -9,17 +9,21 @@ angular.module('wrs.routes', [
     .config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
         $routeProvider
             .when('/', {
-            templateUrl: 'components/home/homeView.html',
-            controller: 'HomeCtrl'})
-
+                templateUrl: 'components/home/homeView.html',
+                controller: 'HomeCtrl'
+            })
+            .when('/en', {
+                templateUrl: 'components/home/homeView.html',
+                controller: 'HomeCtrl'
+            })
             .when('/partners', {
-            templateUrl: 'components/partners/partnersView.html',
-            controller: 'PartnersCtrl'})
-
+                templateUrl: 'components/partners/partnersView.html',
+                controller: 'PartnersCtrl'
+            })
             .when('/contact', {
-            templateUrl: 'components/contact/contactView.html',
-            controller: 'ContactCtrl'})
-
+                templateUrl: 'components/contact/contactView.html',
+                controller: 'ContactCtrl'
+            })
             .otherwise({redirectTo: '/'});
 
         //$locationProvider.html5Mode(true);

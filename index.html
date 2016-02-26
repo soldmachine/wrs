@@ -27,8 +27,8 @@
 <div class='navbar navbar-static-top'>
   <div class="container" role="navigation">
     <div ng-controller="LangCtrl" class="lang_selector col-xs-12">
-      <a href="javascript:void(0)" ng-if="translate.use() === 'en_US'" ng-click="switchLanguage('de_DE')" translate="LANG_DE_DE"></a>
-      <a href="javascript:void(0)" ng-if="translate.use() === 'de_DE'" ng-click="switchLanguage('en_US')" translate="LANG_EN_US"></a>
+      <a href="javascript:void(0)" ng-if="translate.use() === 'en'" ng-click="switchLanguage('de')" translate="LANG_DE_DE"></a>
+      <a href="javascript:void(0)" ng-if="translate.use() === 'de'" ng-click="switchLanguage('en')" translate="LANG_EN_US"></a>
     </div>
     <div class="navbar-brand col-sm-6 col-xs-12"><a href="#/">{{"ROSI_SCHUSTER" | translate | uppercase}}</a></div>
     <nav id="nav-tag">
@@ -82,6 +82,8 @@
 <script src="components/partners/partnersService.js"></script>
 <script src="components/contact/contactController.js"></script>
 
+<!-- WRS.Directives -->
+<script src="shared/address/addressDirective.js"></script>
 
 <!-- Google Analytics -->
 <script>

@@ -10,6 +10,7 @@ angular.module('wrs', [
         'wrs.partnersService',
         'wrs.contact',
         'wrs.filter',
+        'wrs.address.directive',
         'uiGmapgoogle-maps',
         'jkuri.gallery',
         'pascalprecht.translate'
@@ -34,18 +35,32 @@ angular.module('wrs', [
     )
     .config(['$translateProvider',
         function ($translateProvider) {
-            $translateProvider.useStaticFilesLoader({
-                prefix: 'assets/i18n/',
-                suffix: '.json'
-            });
-            $translateProvider.use('de_DE');
+            $translateProvider
+                .useStaticFilesLoader({     // loads language files asynchronously
+                    prefix: 'assets/i18n/',
+                    suffix: '.json'
+                })
+                .registerAvailableLanguageKeys(["en", "de"], {  // map different german codes to german, otherwise en
+                    "de_AT": "de",
+                    "de_DE": "de",
+                    "de_CH": "de",
+                    "de_LI": "de",
+                    "de_LU": "de",
+                    "*": "en"
+                })
+                .determinePreferredLanguage();  // auto-detects language
         }]
     )
-    .controller('LangCtrl', ['$scope', '$translate',
-        function ($scope, $translate) {
+    .controller('LangCtrl', ['$scope', '$translate', '$location',
+        function ($scope, $translate, $location) {
             $scope.translate = $translate;
             $scope.switchLanguage = function(key) {
                 $translate.use(key);
             };
+
+            // just here so a english version link can be given away
+            if($location.path() == "/en") {
+                $translate.use("en");
+            }
         }]
     );

@@ -2,6 +2,8 @@
 
 angular.module('wrs.home', [])
 
-.controller('HomeCtrl', ['$scope', '$window', function($scope, $window) {
-    $scope.isDraggable = $window.innerWidth > 480 ? true : false;
-}]);
+    .controller('HomeCtrl', ['$scope', '$window', '$location', '$translate',
+        function($scope, $window, $location, $translate) {
+            $scope.isDraggable = $window.innerWidth > 480 ? true : false;
+        }
+    ]);

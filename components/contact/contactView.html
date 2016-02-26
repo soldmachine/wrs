@@ -1,15 +1,13 @@
 <div class="container">
 
+  <!-- GOOGLE MAPS -->
   <div ng-controller="GoogleMapsCtrl" class="gmap_container col-xs-12">
     <ui-gmap-google-map center='map.center' zoom='map.zoom' styles='map.styles' options="map.options">
       <ui-gmap-marker coords="marker.coords" options="marker.options" click="onClick" idkey="marker.id">
         <ui-gmap-window show="true" closeClick="closeClick">
-          <div><b>Weingut Rosi Schuster</b><br />
-            Prangergasse 2<br />
-            7062 St. Margarethen<br />
-            Österreich<br />
-            <a href="mailto:weingut@rosischuster.at" target="_top">weingut@rosischuster.at</a><br />
-            <a href="tel:+4326802624">+43 2680 2624</a>
+          <div><b>{{"VINEYARD" | translate | uppercase}} {{ "ROSI_SCHUSTER" | translate | uppercase}}</b><br />
+            <wrs-address></wrs-address><br />
+            <wrs-mail-tel hide-web="true" hide-icons="true"></wrs-mail-tel>
           </div>
         </ui-gmap-window>
       </ui-gmap-marker>
@@ -18,25 +16,18 @@
 
   <div class="col-sm-6 col-xs-12">
     <div class="contact_address">
-      <h3>{{"Weingut Rosi Schuster" | uppercase}}</h3>
-      <div>
-        {{"Prangergasse 2" | uppercase}}<br />
-        {{"7062 St. Margarethen im Burgenland" | uppercase}}<br />
-        {{"Österreich" | uppercase}}
-      </div>
+      <h3>{{"VINEYARD" | translate | uppercase}} {{ "ROSI_SCHUSTER" | translate | uppercase}}</h3>
+      <wrs-address></wrs-address>
     </div>
 
     <div class="contact_web_mail">
-      <a href="mailto:weingut@rosischuster.at" target="_top">
-        <i class="glyphicon glyphicon-envelope contact_icon_margin"></i>weingut@rosischuster.at
-      </a><br />
-      <a href="tel:+4326802624"><i class="glyphicon glyphicon-earphone contact_icon_margin"></i>+43 2680 2624</a><br />
-      <a href="http://www.rosischuster.at"><i class="glyphicon glyphicon-globe contact_icon_margin"></i>www.rosischuster.at</a>
+      <wrs-mail-tel></wrs-mail-tel>
     </div>
 
     <div class="contact_jurisdiction_uid">
-      {{"Gerichtsstand: Eisenstadt" | uppercase}} <br />
-      UID Nr.: ATU66622103
+      {{"PLACE_OF_JURISDICTION" | translate}} <br />
+      UID Nr.: ATU66622103 <br />
+      {{"PHOTOGRAPHY_BY" | translate}}
     </div>
   </div>
 
