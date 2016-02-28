@@ -5,11 +5,11 @@
 }
 
 img.ng-thumb {
-  height: 50px;
+  height: 75px;
   float: left;
   display: block;
   cursor: pointer;
-  margin: 2px 2px 0 0; 
+  margin: 5px 5px 0 0;
 }
 
 .ng-overlay { 

@@ -6,7 +6,6 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <!--<base href="assets/img/favicon/">-->
 
   <title>Rosi Schuster</title>
 
@@ -43,13 +42,9 @@
 </head>
 <body>
 
-<!-- Navigation -->
+<!-- HEADER / NAVIGATION -->
 <div class='navbar navbar-static-top'>
   <div class="container" role="navigation">
-    <div ng-controller="LangCtrl" class="lang_selector col-xs-12">
-      <a href="javascript:void(0)" ng-if="translate.use() === 'en'" ng-click="switchLanguage('de')" translate="LANG_DE_DE"></a>
-      <a href="javascript:void(0)" ng-if="translate.use() === 'de'" ng-click="switchLanguage('en')" translate="LANG_EN_US"></a>
-    </div>
     <div class="navbar-brand col-sm-6 col-xs-12"><a href="#/">ROSI SCHUSTER</a></div>
     <nav id="nav-tag">
       <ul class="nav navbar-nav navbar-right" ng-controller="NavCtrl">
@@ -70,10 +65,18 @@
 </p>
 <![endif]-->
 
-<!-- Main -->
+<!-- MAIN -->
 <div ng-view></div>
 
 
+<!-- FOOTER -->
+<div class="container">
+  <div ng-controller="LangCtrl" class="lang_selector col-xs-12">
+    <hr />
+    <a href="javascript:window.scrollTo(0,0);" ng-if="translate.use() === 'en'" ng-click="switchLanguage('de')">{{"LANG_DE_DE" | translate | uppercase}}</a>
+    <a href="javascript:window.scrollTo(0,0);" ng-if="translate.use() === 'de'" ng-click="switchLanguage('en')">{{"LANG_EN_US" | translate | uppercase}}</a>
+  </div>
+</div>
 
 <!-- In production use:
 <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
