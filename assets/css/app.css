@@ -12,15 +12,16 @@
 
 body {
   font-family: "Linotype", sans-serif;
-  margin-top: 15px;
-  margin-bottom: 50px;
-  /*  background-image: url('../../cover/WEINLESE-12.jpg');
-    background-repeat:no-repeat;
-    background-position: center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;*/
+  padding-top: 15px;
+  padding-bottom: 50px;
+  color: #303030;
+  /*background-image: url('../../cover/WEINLESE-12.jpg');*/
+  /*background-repeat:no-repeat;*/
+  /*background-position: center center;*/
+  /*-webkit-background-size: cover;*/
+  /*-moz-background-size: cover;*/
+  /*-o-background-size: cover;*/
+  /*background-size: cover;*/
 }
 
 .container {
@@ -164,12 +165,12 @@ body {
 }
 
 /*.partners_flags{*/
-  /*width: 35px;*/
-  /*height: 35px;*/
-  /*margin-right: 5px;*/
-  /*display: table-cell;*/
-  /*vertical-align: middle;*/
-  /*float: left;*/
+/*width: 35px;*/
+/*height: 35px;*/
+/*margin-right: 5px;*/
+/*display: table-cell;*/
+/*vertical-align: middle;*/
+/*float: left;*/
 /*}*/
 
 .partners_flags_img{
