@@ -135,7 +135,10 @@ body {
   .navbar-nav {
     font-size: small;
   }
-  .navbar-brand {
+  .navbar-brand,
+  .navbar-brand,
+  .navbar-brand > a:hover,
+  .navbar-brand > a:focus {
     font-size: 30px;
   }
 }
