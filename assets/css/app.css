@@ -10,11 +10,12 @@
   src: url('fonts/LinotypeSyntaxCom-Light.ttf')  format('truetype');
 }
 
+html,
 body {
   font-family: "Linotype", sans-serif;
-  padding-top: 15px;
-  padding-bottom: 50px;
   color: #303030;
+  margin-top: 5px;
+  margin-bottom: 20px;
   /*background-image: url('../../cover/WEINLESE-12.jpg');*/
   /*background-repeat:no-repeat;*/
   /*background-position: center center;*/
@@ -22,6 +23,9 @@ body {
   /*-moz-background-size: cover;*/
   /*-o-background-size: cover;*/
   /*background-size: cover;*/
+  /*height:100%;*/
+
+  /*text-shadow: 0 1px 3px rgba(0,0,0,.5);*/
 }
 
 .container {
@@ -32,14 +36,23 @@ body {
  * Language Selector
  */
 .lang_selector {
+  margin-top: 50px;
   text-align: right;
   padding-right: 0px;
   font-size: smaller;
 }
 
+.lang_selector>a:link,
+.lang_selector>a:visited,
+.lang_selector>a:hover,
+.lang_selector>a:focus,
+.lang_selector>a:active {
+  color: #303030;
+}
+
 /* Navigation */
 .navbar {
-
+  margin-top: 20px;
 }
 .navbar-brand,
 .navbar-brand > a:hover,
@@ -64,15 +77,10 @@ body {
 }
 
 .navbar li.active>a {
-  color: #800000;
+  color: #C80000;
+  font-weight:bold;
   border-bottom: 1px solid #C80000;
 }
-
-/*.nav > li.active > a,
-.nav > li.active > a:hover,
-.nav > li.active > a:focus {
-  color: #C80000;
-}*/
 
 .navbar-nav > li {
   display: inline-block;
@@ -98,7 +106,6 @@ body {
   }
   .home_quote {
     font-size: x-large;
-    margin-top: 80px;
   }
 }
 
@@ -116,7 +123,6 @@ body {
   }
   .home_quote {
     font-size: large;
-    margin-top: 20px;
   }
   .navbar-nav {
     font-size: medium;
@@ -128,7 +134,10 @@ body {
  */
 @media (max-width: 359px) {
   .navbar-nav {
-    font-size: inherit;
+    font-size: small;
+  }
+  .navbar-brand {
+    font-size: 30px;
   }
 }
 
@@ -140,6 +149,8 @@ body {
 
 .home_quote {
   text-align: justify;
+  margin-top: 25px;
+  /*font-variant:small-caps;*/
 }
 
 .home_quote.author {
@@ -164,15 +175,6 @@ body {
   margin-bottom: 10px;
 }
 
-/*.partners_flags{*/
-/*width: 35px;*/
-/*height: 35px;*/
-/*margin-right: 5px;*/
-/*display: table-cell;*/
-/*vertical-align: middle;*/
-/*float: left;*/
-/*}*/
-
 .partners_flags_img{
   border-radius: 25px;
   width: 25px;
@@ -183,10 +185,8 @@ body {
   overflow: hidden;
 }
 
-
 .partners_country {
   font-size: 23px;
-  /*padding-top: 3px; !* just to counter the padding under the font itself *!*/
 }
 
 .partners_contact_card {
@@ -226,5 +226,6 @@ body {
 }
 
 .gmap_container {
+  margin-top: 20px;
   margin-bottom: 35px;
 }
