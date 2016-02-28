@@ -131,7 +131,7 @@ body {
 /*
  * iPhone 4 & 5
  */
-@media (max-width: 359px) {
+@media (max-width: 361px) {
   .navbar-nav {
     font-size: small;
   }
