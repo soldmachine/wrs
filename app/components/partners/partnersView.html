@@ -11,8 +11,12 @@
       <div class="partners_contact_card_hl">{{partner.name}}</div>
       <div class="">{{partner.address}}</div>
 
-      <a ng-if="partner.website" href="{{partner.website}}" target="_blank">{{partner.website | removeHTTP}}</a>
-      <a ng-if="partner.email" href="mailto:{{partner.email}}" target="_top">{{partner.email}}</a>
+      <a ng-if="partner.website" href="{{partner.website}}" target="_blank" analytics-on="click" analytics-category="Partners.Web" analytics-event="{{partner.website | removeHTTP}}">
+        {{partner.website | removeHTTP}}
+      </a>
+      <a ng-if="partner.email" href="mailto:{{partner.email}}" target="_top" analytics-on="click" analytics-category="Partners.Mail" analytics-event="{{partner.email}}">
+        {{partner.email}}
+      </a>
     </div>
 
   </div>
