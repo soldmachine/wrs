@@ -63,4 +63,39 @@ angular.module('wrs', [
                 $translate.use("en");
             }
         }]
-    );
+    )
+    .config(config)
+    .run(run);
+
+config.$inject = ['$locationProvider', '$stateProvider', '$urlRouterProvider'];
+function config($locationProvider, $stateProvider, $urlRouterProvider) {
+    $locationProvider.html5Mode(true);
+
+    $urlRouterProvider.otherwise("/");
+
+    $stateProvider
+
+        .state('home', {
+            url: '/',
+            templateUrl: 'views/home.html',
+            controller: function ($rootScope) {
+                $rootScope.title = 'Snoopex Computer Repairs and Upgrades Campbelltown and Wollongong';
+                $rootScope.metaDescription = 'Professional computer repairs, upgrades and custom built PCs. Providing professional computer repair services to the Campbelltown and Wollongong areas for over 20 years.';
+            }
+        })
+
+        // ... other routes excluded for brevity
+
+    ;
+}
+
+run.$inject = ['$rootScope', '$location', '$window'];
+function run($rootScope, $location, $window) {
+    // initialise google analytics
+    $window.ga('create', 'UA-74000801-1', 'auto');
+
+    // track pageview on state change
+    $rootScope.$on('$stateChangeSuccess', function (event) {
+        $window.ga('send', 'pageview', $location.path());
+    });
+};
