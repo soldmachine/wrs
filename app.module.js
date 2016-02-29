@@ -13,7 +13,8 @@ angular.module('wrs', [
         'wrs.address.directive',
         'uiGmapgoogle-maps',
         'jkuri.gallery',
-        'pascalprecht.translate'
+        'pascalprecht.translate',
+        'angulartics', 'angulartics.google.analytics'
     ])
 
     // Checks whether $location.path() and the variable viewLocation are equal (used for .navbar li.active>a)
@@ -63,17 +64,4 @@ angular.module('wrs', [
                 $translate.use("en");
             }
         }]
-    )
-    .run(run);
-
-
-run.$inject = ['$rootScope', '$location', '$window'];
-function run($rootScope, $location, $window) {
-    // initialise google analytics
-    $window.ga('create', 'UA-74000801-1', 'auto');
-
-    // track pageview on state change
-    $rootScope.$on('$stateChangeSuccess', function (event) {
-        $window.ga('send', 'pageview', $location.path());
-    });
-};
+    );
