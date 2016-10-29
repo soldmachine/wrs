@@ -6,26 +6,27 @@ angular.module('wrs.routes', [
         'wrs.partners'
     ])
 
-    .config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
-        $routeProvider
-            .when('/', {
-                templateUrl: 'components/home/homeView.html',
-                controller: 'HomeCtrl'
-            })
-            .when('/en', {
-                templateUrl: 'components/home/homeView.html',
-                controller: 'HomeCtrl'
-            })
-            .when('/partners', {
-                templateUrl: 'components/partners/partnersView.html',
-                controller: 'PartnersCtrl'
-            })
-            .when('/contact', {
-                templateUrl: 'components/contact/contactView.html',
-                controller: 'ContactCtrl'
-            })
-            .otherwise({redirectTo: '/'});
+    .config(['$routeProvider', '$locationProvider',
+        function($routeProvider, $locationProvider) {
 
-        //$locationProvider.html5Mode(true);
-
-    }]);
+            //$locationProvider.html5Mode(true);
+            $routeProvider
+                .when('/', {
+                    templateUrl: 'components/home/homeView.html',
+                    controller: 'HomeCtrl'
+                })
+                .when('/en', {
+                    templateUrl: 'components/home/homeView.html',
+                    controller: 'HomeCtrl'
+                })
+                .when('/partners', {
+                    templateUrl: 'components/partners/partnersView.html',
+                    controller: 'PartnersCtrl'
+                })
+                .when('/contact', {
+                    templateUrl: 'components/contact/contactView.html',
+                    controller: 'ContactCtrl'
+                })
+                .otherwise({redirectTo: '/'});
+        }
+    ]);
