@@ -1,0 +1,27 @@
+[
+    {
+        "id": 1,
+        "name": "Mount Fuji",
+        "url": "https://api.fluttercrashcourse.com/assets/images/fuji@3x.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Arashiyama Bamboo Grove",
+        "url": "https://api.fluttercrashcourse.com/assets/images/arashiyama@3x.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Kiyomizu-dera",
+        "url": "https://api.fluttercrashcourse.com/assets/images/kiyomizu-dera@3x.png"
+    },
+    {
+        "id": 4,
+        "name": "Kinkaku-ji",
+        "url": "https://api.fluttercrashcourse.com/assets/images/kinkaku-ji@3x.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Odaiba",
+        "url": "https://api.fluttercrashcourse.com/assets/images/odaiba@3x.jpg"
+    }
+]
