@@ -1,0 +1,17 @@
+{
+    "id": 3,
+    "name": "Kiyomizu-dera",
+    "url": "https://gaijinpot.scdn3.secure.raxcdn.com/app/uploads/sites/6/2017/07/Kiyomizudera-Temple-Kyoto.jpg",
+    "userItinerarySummary": "Day 1: 4PM - 5:00PM",
+    "tourPackageName": "Standard Package",
+    "facts": [
+        {
+            "title": "Summary",
+            "text": "Kiyomizu-dera, officially Otowa-san Kiyomizu-dera, is an independent Buddhist temple in eastern Kyoto. The temple is part of the Historic Monuments of Ancient Kyoto UNESCO World Heritage site."
+        },
+        {
+            "title": "Architectural Style",
+            "text": "Japanese Buddhist architecture"
+        }
+    ]
+}
