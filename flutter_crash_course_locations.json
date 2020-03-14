@@ -2,26 +2,26 @@
     {
         "id": 1,
         "name": "Mount Fuji",
-        "url": "https://api.fluttercrashcourse.com/assets/images/fuji@3x.jpg"
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/080103_hakkai_fuji.jpg/1200px-080103_hakkai_fuji.jpg"
     },
     {
         "id": 2,
         "name": "Arashiyama Bamboo Grove",
-        "url": "https://api.fluttercrashcourse.com/assets/images/arashiyama@3x.jpg"
+        "url": "https://www.touristinjapan.com/wp-content/uploads/2019/03/arashiyama-bamboo-forest-1020x600.jpg"
     },
     {
         "id": 3,
         "name": "Kiyomizu-dera",
-        "url": "https://api.fluttercrashcourse.com/assets/images/kiyomizu-dera@3x.png"
+        "url": "https://gaijinpot.scdn3.secure.raxcdn.com/app/uploads/sites/6/2017/07/Kiyomizudera-Temple-Kyoto.jpg"
     },
     {
         "id": 4,
         "name": "Kinkaku-ji",
-        "url": "https://api.fluttercrashcourse.com/assets/images/kinkaku-ji@3x.jpg"
+        "url": "https://www.japan-guide.com/g18/3908_top.jpg"
     },
     {
         "id": 5,
         "name": "Odaiba",
-        "url": "https://api.fluttercrashcourse.com/assets/images/odaiba@3x.jpg"
+        "url": "https://rimage.gnst.jp/livejapan.com/public/article/detail/a/00/00/a0000132/img/basic/a0000132_main.jpg"
     }
 ]
